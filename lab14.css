@@ -1,0 +1,87 @@
+*
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body
+{
+    margin: 0;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.header 
+{
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: flexbox;
+}
+
+.header .profile-pic
+{
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100%;
+    border: 0.1rem solid black;
+    width: 10rem;
+    height: 10rem;
+    position: relative;
+}
+
+.header .profile-pic .pic:hover
+{
+    scale: 1.1;
+    transition: all 0.8s;
+}
+
+.header .profile-pic .pic
+{
+    background: url(https://media1.tenor.com/m/cZUGs-Ad_68AAAAC/dancing-cute.gif) center;
+    background-size: cover;
+    border-radius: 100%;
+    width: 100%;
+    height: 100%;
+    transition: all 0.8s;
+}
+
+.header .profile-pic .i
+{
+    border-radius: 100%;
+    background-color: red;
+    color: white;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: bold;
+    width: 1.5rem;
+    height: 1.5rem;
+    text-align: center;
+    position: absolute;
+    right: 0.7rem;
+    bottom: 0.7rem;
+}
+
+.header .profile-pic .i i
+{
+    font-style: normal;
+    font-size: 1.2rem;
+}
+
+.form
+{
+    margin-top: 4vh;
+}
+
+.form label
+{
+    font: bold;
+}
+
+.form input
+{
+    border: transparent;
+    background-color: antiquewhite;
+}
