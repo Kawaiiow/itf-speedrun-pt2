@@ -1,32 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="lab14.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="index.js"></script>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- <link rel="stylesheet" href="lab14.css"> -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
+        <script src="index.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Lab14</title>
 </head>
-<body>
-    <div class="header">
-        <h1>Pichaya Basri</h1>
-            <div class="profile-pic">
-                <div class="cov"></div>
-                <div class="pic"></div>
-                <div class="i">
-                    <i>!</i>
-                </div>
+<body class="container mx-auto">
+    <div class="flex flex-col items-center">
+        <h1 class="text-3xl font-bold mt-4 hover:text-blue-500 hover:underline transition ease-in-out delay-150" id="display_name">
+            Pichaya Basri 67070114
+        </h1>
+        <div class="relative w-44 h-44">
+            <img src="https://avatars.githubusercontent.com/u/84803835?v=4" class="border-2 border-solid border-black rounded-full" id="profile-pic">
+            <div class="bg-red-500 rounded-full w-6 h-6 text-center absolute bottom-4 right-4">
+                <p class="text-slate-50">1</p>
             </div>
-    </div>
-    <div class="form">
-        <label for="user" value="Username">
-            Username
-            <input type="text" name="username" id="username">
-        </label>
-    </div>
-    <div class="foot">
-        <h2 id="test">hello</h2>
+        </div>
+        <form class="mt-2">
+            <label for="username" class="font-normal">Set the username</label>
+            <input type="text" name="username" placeholder="Enter username" id="input_username" class="bg-slate-200 rounded-md">
+            <input type="button" value="SET" class="bg-blue-500 rounded-md text-white px-2 transition ease-in-out delay-150 hover:scale-110" id="username_btn">
+        </form>
+        <form class="mt-2">
+            <label for="url_image">URL image</label>
+            <input type="text" placeholder="Enter Image URL" name="url_image" id="input_url" class="bg-slate-200 rounded-md">
+            <input type="button" value="SET" class="bg-blue-500 rounded-md text-white px-2 transition ease-in-out delay-150 hover:scale-110" id="url_btn">
+        </form>
+        <h1 class="font-bold text-lg mt-2">Phone number List</h1>
+        <form class="mt-2">
+            <input type="text" placeholder="Name" id="input_name" class="bg-slate-200 rounded-md">
+            <input type="tel" placeholder="Tel" id="input_tel" class="bg-slate-200 rounded-md">
+            <input type="button" value="ADD" class="bg-blue-500 rounded-md text-white px-2 transition ease-in-out delay-150 hover:scale-110" id="add_btn">
+            <input type="button" value="EXPORT" class="bg-blue-500 rounded-md text-white px-2 transition ease-in-out delay-150 hover:scale-110" id="ex_csv">
+        </form>
+        <table id="contact" class="mt-6">
+            <th class="bg-slate-300 px-10">No.</th>
+            <th class="bg-slate-300 px-10">Name</th>
+            <th class="bg-slate-300 px-10">Phone Number</th>
+        </table>
     </div>
 </body>
+
 </html>
